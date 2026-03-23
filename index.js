@@ -3,11 +3,13 @@ const app = express();
 
 app.use(express.json());
 
-let todos = ["Sample anmol ", "benicoe Todo"].map((title, index) => ({
-  id: index + 1,
-  title,
-  completed: false,
-}));
+let todos = ["Sample anmol dneidnoidnoenb", "benicoe Todo"].map(
+  (title, index) => ({
+    id: index + 1,
+    title,
+    completed: false,
+  })
+);
 
 // GET all todos
 app.get("/todos", (req, res) => {
