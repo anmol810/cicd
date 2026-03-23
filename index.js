@@ -9,7 +9,7 @@ app.use(express.json());
 
 // In-memory store
 let todos = [];
-let id = 1;
+let id = 0;
 
 // Health check
 app.get("/", (req, res) => {
